@@ -7,5 +7,9 @@
 # DOMAIN-SUFFIX: 7
 # TOTAL: 13
 # REPO: https://github.com/blackmatrix7/ios_rule_script
+#真相社区
 DOMAIN,truthsocial.com
 DOMAIN-SUFFIX,truthsocial.com
+#今日美国
+DOMAIN,usatoday.com
+DOMAIN-SUFFIX,usatoday.com
