@@ -2,7 +2,7 @@
 # 如有问题求助请加群组 https://t.me/clash_verge_rev
 # 找管理员 @christine_akas
 
-# 代理订阅提供者 (保留原始设置)
+# 代理订阅提供者 (仅保留 provider1)
 proxy-providers:
   provider1:
     type: http
@@ -20,7 +20,6 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
-
 
 # 全局设置 (保留原始设置)
 mixed-port: 7890
@@ -142,60 +141,60 @@ proxy-groups:
   # --- 自动和手动策略组 ---
   - name: 🚀 手动切换
     type: select
-    include-all: true
+    use: [provider1]
   - name: ♻️ 自动选择
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     tolerance: 50
-    include-all: true
+    use: [provider1]
 
-  # --- 按地区自动测速策略组 ---
+  # --- 按地区自动测速策略组 (已修正) ---
   - name: 🇭🇰 香港节点
     type: url-test
-    use: [provider1, provider2]
+    use: [provider1]
     url: 'http://www.gstatic.com/generate_204'
     interval: 1800
     tolerance: 50
     filter: '(港|HK|hk|Hong Kong|HongKong|hongkong)'
   - name: 🇯🇵 日本节点
     type: url-test
-    use: [provider1, provider2]
+    use: [provider1]
     url: 'http://www.gstatic.com/generate_204'
     interval: 1800
     tolerance: 50
     filter: '(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan)'
   - name: 🇺🇲 美国节点
     type: url-test
-    use: [provider1, provider2]
+    use: [provider1]
     url: 'http://www.gstatic.com/generate_204'
     interval: 1800
     tolerance: 150
     filter: '(美國|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|States)'
   - name: 🇨🇳 台湾节点
     type: url-test
-    use: [provider1, provider2]
+    use: [provider1]
     url: 'http://www.gstatic.com/generate_204'
     interval: 1800
     tolerance: 50
     filter: '(台|灣|新北|彰化|TW|Taiwan)'
   - name: 🇸🇬 狮城节点
     type: url-test
-    use: [provider1, provider2]
+    use: [provider1]
     url: 'http://www.gstatic.com/generate_204'
     interval: 1800
     tolerance: 50
     filter: '(新加坡|坡|狮城|SG|Singapore)'
   - name: 🇬🇧 英国节点
     type: url-test
-    use: [provider1, provider2]
+    use: [provider1]
     url: 'http://www.gstatic.com/generate_204'
     interval: 1800
     tolerance: 50
     filter: '(英国|英|英格兰|UK|United Kingdom)'
   - name: 🇹🇷 其他节点
     type: url-test
-    use: [provider1, provider2]
+    use: [provider1]
     url: 'http://www.gstatic.com/generate_204'
     interval: 1800
     tolerance: 50
