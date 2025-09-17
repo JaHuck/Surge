@@ -16,3 +16,6 @@ DOMAIN-SUFFIX,usatoday.com
 
 # 彭博社 (Bloomberg)
 DOMAIN-SUFFIX,bloomberg.com
+
+# 币安（Binance）
+DOMAIN-SUFFIX,binance.com
