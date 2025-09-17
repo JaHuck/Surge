@@ -8,7 +8,9 @@
 # TOTAL: 13
 # REPO: https://github.com/blackmatrix7/ios_rule_script
 
-# 币安 （binance）
-DOMAIN-SUFFIX,binance.com
+# IBKR 
+DOMAIN-SUFFIX,interactivebrokers
 
+#tradingview
+DOMAIN-SUFFIX,tradingview.com
 
