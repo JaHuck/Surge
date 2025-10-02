@@ -17,4 +17,5 @@ DOMAIN-SUFFIX,usatoday.com
 # 彭博社 (Bloomberg)
 DOMAIN-SUFFIX,bloomberg.com
 
-
+# Sora
+DOMAIN-SUFFIX,sora.chatgpt.com
